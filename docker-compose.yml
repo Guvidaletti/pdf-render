@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  pdf-render:
+    container_name: pdf-render
+    build: .
+    ports:
+      - 8080:8085
+    environment:
+      - API_PORT=8085
